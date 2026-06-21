@@ -128,3 +128,14 @@
 4. **장르 정확도** — ⏳ 현 수준 유지, 추후 개선.
 5. **알림** — ✅ 이번엔 안 함. 데이터 안정화 후 백로그.
 6. **수집량** — ✅ 출처별 2페이지 유지.
+
+### v0.3 — 대시보드 스택 (확정)
+
+- **프레임워크:** Next.js 15 (App Router) + TypeScript, **정적 export**.
+- **스타일:** Tailwind v4 + CSS변수 **2층 토큰**(primitive→semantic). 디자인 시스템은 `web/DESIGN.md`.
+- **무드:** 모던 한국 에디토리얼(WIRED 구조 + Pretendard). 크림 배경 · 4px 카드 · 괘선 · 잉크블루 링크 · 버밀리언 강조.
+- **D-day 색:** ≤5일 빨강 / 6~14일 황토 / 15일+ 초록 / 미정 회색.
+- **데이터:** `web/public/contests.json` 을 런타임 fetch(주1회 갱신, 재빌드 불필요).
+- **호스팅:** Vercel(`web/` 루트). 폴더는 같은 repo 모노레포.
+- **컴포넌트:** Atomic (atoms·molecules·organisms).
+- 기존 바닐라 `docs/index.html` 은 폐기.

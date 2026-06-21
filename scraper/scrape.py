@@ -9,7 +9,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from genres import dedupe
 from sources import wevity, ilovecontest
 
-OUT = Path(__file__).resolve().parent.parent / "docs" / "contests.json"
+OUT = Path(__file__).resolve().parent.parent / "web" / "public" / "contests.json"
 PAGES = 2  # 출처별로 긁어올 페이지 수
 
 
