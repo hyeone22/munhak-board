@@ -3,7 +3,15 @@ import { ddayInfo, isNew } from "../../lib/dday";
 import { MetaRow } from "../molecules/MetaRow";
 
 /** WIRED story-row — 박스/그림자/뱃지 없이 가는 괘선으로 나뉜 기사 행. */
-export function ContestCard({ contest }: { contest: Contest }) {
+export function ContestCard({
+  contest,
+  isFav,
+  onToggleFav,
+}: {
+  contest: Contest;
+  isFav: boolean;
+  onToggleFav: (url: string) => void;
+}) {
   const { state, label } = ddayInfo(contest.deadline);
   const ddayClass =
     state === "soon"
@@ -32,7 +40,21 @@ export function ContestCard({ contest }: { contest: Contest }) {
         <h3 className="text-[21px] font-bold leading-snug tracking-tight text-ink group-hover:text-link">
           {contest.title}
         </h3>
-        <span className={`shrink-0 text-[14px] tracking-tight ${ddayClass}`}>{label}</span>
+        <div className="flex shrink-0 items-baseline gap-2.5">
+          <button
+            type="button"
+            aria-label="즐겨찾기"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onToggleFav(contest.url);
+            }}
+            className={`text-[16px] leading-none ${isFav ? "text-ink" : "text-rule hover:text-muted"}`}
+          >
+            {isFav ? "★" : "☆"}
+          </button>
+          <span className={`text-[14px] tracking-tight ${ddayClass}`}>{label}</span>
+        </div>
       </div>
 
       {contest.summary && (
