@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T12:59:05+00:00",
+  "generated_at": "2026-06-21T13:03:46+00:00",
   "count": 61,
   "contests": [
     {
@@ -415,7 +415,7 @@
       "dday": "D-24",
       "status": "종합",
       "summary": "신인문학상 수상 시 등단패와 상장, 도서 증정 및 연말 문학대상 자동 응모 기회",
-      "prize": "총상금 9,000만원",
+      "prize": "총상금 1000만원",
       "eligibility": "제한없음",
       "sources": [
         "엽서시"
@@ -641,7 +641,7 @@
       "dday": "D-52",
       "status": "종합",
       "summary": "",
-      "prize": "총상금 1000만원",
+      "prize": "",
       "eligibility": "초, 중, 고, 청",
       "sources": [
         "엽서시"
@@ -796,7 +796,7 @@
       "dday": "D-61",
       "status": "수필",
       "summary": "'일상 속의 장애인' 스토리텔링 공모전, 대상 200만 원 및 보건복지부 장관상",
-      "prize": "대상 200만원",
+      "prize": "총상금 9,000만원",
       "eligibility": "제한없음",
       "sources": [
         "엽서시"
@@ -956,15 +956,15 @@
       "dday": "D-71",
       "status": "종합",
       "summary": "제4회 문학수첩 신인 작가상, 중편소설 500만원 등 4개 부문 공모.",
-      "prize": "총상금 1500만원",
+      "prize": "",
       "eligibility": "신인, 작가",
       "sources": [
         "엽서시"
       ]
     },
     {
-      "title": "제4회 선경작가상 공모",
-      "url": "https://www.contestkorea.com/sub/view.php?displayrow=12&int_gbn=1&Txt_sGn=1&Txt_key=all&Txt_word=&Txt_bcode=030110001&Txt_code1=&Txt_aarea=&Txt_area=&Txt_sortkey=a.int_sort&Txt_sortword=desc&Txt_ahost=&Txt_host=&Txt_award=&Txt_award2=&Txt_code3=&Txt_tipyn=&Txt_comment=&Txt_resultyn=&Txt_actcode=&page=1&str_no=202604080081",
+      "title": "제7회 선경문학상 공모",
+      "url": "https://www.contestkorea.com/sub/view.php?displayrow=12&int_gbn=1&Txt_sGn=1&Txt_key=all&Txt_word=&Txt_bcode=030110001&Txt_code1=&Txt_aarea=&Txt_area=&Txt_sortkey=a.int_sort&Txt_sortword=desc&Txt_ahost=&Txt_host=&Txt_award=&Txt_award2=&Txt_code3=&Txt_tipyn=&Txt_comment=&Txt_resultyn=&Txt_actcode=&page=1&str_no=202604080082",
       "organizer": "선경산업",
       "genres": [
         "기타"
@@ -980,8 +980,8 @@
       ]
     },
     {
-      "title": "제7회 선경문학상 공모",
-      "url": "https://www.contestkorea.com/sub/view.php?displayrow=12&int_gbn=1&Txt_sGn=1&Txt_key=all&Txt_word=&Txt_bcode=030110001&Txt_code1=&Txt_aarea=&Txt_area=&Txt_sortkey=a.int_sort&Txt_sortword=desc&Txt_ahost=&Txt_host=&Txt_award=&Txt_award2=&Txt_code3=&Txt_tipyn=&Txt_comment=&Txt_resultyn=&Txt_actcode=&page=1&str_no=202604080082",
+      "title": "제4회 선경작가상 공모",
+      "url": "https://www.contestkorea.com/sub/view.php?displayrow=12&int_gbn=1&Txt_sGn=1&Txt_key=all&Txt_word=&Txt_bcode=030110001&Txt_code1=&Txt_aarea=&Txt_area=&Txt_sortkey=a.int_sort&Txt_sortword=desc&Txt_ahost=&Txt_host=&Txt_award=&Txt_award2=&Txt_code3=&Txt_tipyn=&Txt_comment=&Txt_resultyn=&Txt_actcode=&page=1&str_no=202604080081",
       "organizer": "선경산업",
       "genres": [
         "기타"

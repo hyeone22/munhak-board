@@ -31,16 +31,12 @@ def _parse_day(text, today):
     return "", status, None
 
 
-def fetch(today, pages=2):
+def parse(html, today):
+    """리스트 HTML → 항목 리스트. (네트워크 분리 — 테스트 가능)"""
     items = []
-    for pg in range(1, pages + 1):
-        url = LIST_URL + (f"&pg={pg}" if pg > 1 else "")
-        resp = requests.get(url, headers=HEADERS, timeout=20)
-        resp.encoding = resp.apparent_encoding or "utf-8"
-        soup = BeautifulSoup(resp.text, "lxml")
-        ul = soup.select_one("ul.list")
-        if not ul:
-            continue
+    soup = BeautifulSoup(html, "lxml")
+    ul = soup.select_one("ul.list")
+    if ul:
         for li in ul.find_all("li", recursive=False):
             if "top" in (li.get("class") or []):
                 continue
@@ -75,4 +71,14 @@ def fetch(today, pages=2):
                 "eligibility": "",
                 "sources": [SOURCE],
             })
+    return items
+
+
+def fetch(today, pages=2):
+    items = []
+    for pg in range(1, pages + 1):
+        url = LIST_URL + (f"&pg={pg}" if pg > 1 else "")
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        resp.encoding = resp.apparent_encoding or "utf-8"
+        items.extend(parse(resp.text, today))
     return items

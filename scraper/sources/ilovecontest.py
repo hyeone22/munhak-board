@@ -61,45 +61,52 @@ def _fetch_prize(url):
         return ""
 
 
+def parse(html, today, with_prize=False):
+    """리스트 HTML → 항목 리스트. with_prize=True면 항목별 상세에서 상금 보강(네트워크)."""
+    items = []
+    soup = BeautifulSoup(html, "lxml")
+    for card in soup.select(".daangn-item"):
+        subj = card.select_one(".daangn-subject")
+        link = card.select_one("a.daangn-subject-link")
+        if not subj or not link:
+            continue
+        title = subj.get_text(strip=True)
+        href = link.get("href", "")
+        organ_el = card.select_one(".daangn-organizer")
+        organ = organ_el.get_text(strip=True) if organ_el else ""
+        cate_el = card.select_one(".daangn-cate")
+        status = cate_el.get_text(strip=True) if cate_el else ""
+        sum_el = card.select_one(".summary-bubble-pc")
+        summary = sum_el.get_text(strip=True) if sum_el else ""
+        elig_el = card.select_one(".ex7-data")
+        eligibility = elig_el.get_text(strip=True) if elig_el else ""
+        dday_el = card.select_one(".pc-dday-text, .mobile-dday-badge")
+        dday = dday_el.get_text(strip=True) if dday_el else ""
+        date_el = card.select_one(".pc-date-text")
+        deadline = _parse_date(date_el.get_text(strip=True) if date_el else "")
+        if deadline and deadline < today.isoformat():
+            continue  # 마감 지난 건 제외
+        items.append({
+            "title": title,
+            "url": href,
+            "organizer": organ,
+            "genres": classify(title, summary),
+            "deadline": deadline,
+            "dday": dday,
+            "status": status,
+            "summary": summary,
+            "prize": _fetch_prize(href) if with_prize else "",
+            "eligibility": eligibility,
+            "sources": [SOURCE],
+        })
+    return items
+
+
 def fetch(today, pages=2, with_prize=True):
     items = []
     for pg in range(1, pages + 1):
         url = LIST_URL + (f"&page={pg}" if pg > 1 else "")
         resp = _session.get(url, timeout=20)
         resp.encoding = resp.apparent_encoding or "utf-8"
-        soup = BeautifulSoup(resp.text, "lxml")
-        for card in soup.select(".daangn-item"):
-            subj = card.select_one(".daangn-subject")
-            link = card.select_one("a.daangn-subject-link")
-            if not subj or not link:
-                continue
-            title = subj.get_text(strip=True)
-            href = link.get("href", "")
-            organ_el = card.select_one(".daangn-organizer")
-            organ = organ_el.get_text(strip=True) if organ_el else ""
-            cate_el = card.select_one(".daangn-cate")
-            status = cate_el.get_text(strip=True) if cate_el else ""
-            sum_el = card.select_one(".summary-bubble-pc")
-            summary = sum_el.get_text(strip=True) if sum_el else ""
-            elig_el = card.select_one(".ex7-data")
-            eligibility = elig_el.get_text(strip=True) if elig_el else ""
-            dday_el = card.select_one(".pc-dday-text, .mobile-dday-badge")
-            dday = dday_el.get_text(strip=True) if dday_el else ""
-            date_el = card.select_one(".pc-date-text")
-            deadline = _parse_date(date_el.get_text(strip=True) if date_el else "")
-            if deadline and deadline < today.isoformat():
-                continue  # 마감 지난 건 제외
-            items.append({
-                "title": title,
-                "url": href,
-                "organizer": organ,
-                "genres": classify(title, summary),
-                "deadline": deadline,
-                "dday": dday,
-                "status": status,
-                "summary": summary,
-                "prize": _fetch_prize(href) if with_prize else "",
-                "eligibility": eligibility,
-                "sources": [SOURCE],
-            })
+        items.extend(parse(resp.text, today, with_prize=with_prize))
     return items
