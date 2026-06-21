@@ -71,6 +71,8 @@ def fetch(today, pages=2):
                 "dday": dday,
                 "status": status,
                 "summary": "",
+                "prize": "",        # 위비티 상세는 봇 차단 → 원문 링크로 위임
+                "eligibility": "",
                 "sources": [SOURCE],
             })
     return items
