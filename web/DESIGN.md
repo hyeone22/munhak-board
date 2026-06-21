@@ -128,7 +128,7 @@ border-strong:   2px solid color-rule-strong
 shadow-card:     0 1px 2px rgba(20,18,14,.05)   /* 아주 연한 한 겹 */
 
 space: 4 / 8 / 12 / 16 / 24 / 32 / 48 (px 스케일)
-maxWidth-content: 920px
+maxWidth-content: 1120px
 ```
 
 - 깊이는 **괘선이 우선**, 카드에만 `shadow-card` 한 겹.
