@@ -75,7 +75,7 @@ export default function Page() {
           </p>
         )}
         {status === "ok" && items.length > 0 && (
-          <div className="flex flex-col gap-2">
+          <div className="border-t border-rule">
             {items.map((c) => (
               <ContestCard key={c.url + c.title} contest={c} />
             ))}
@@ -83,9 +83,11 @@ export default function Page() {
         )}
       </main>
 
-      <footer className="mx-auto w-full max-w-content px-4 pt-2 pb-10 text-[12px] leading-relaxed text-caption">
-        데이터는 위비티·엽서시 공개 정보를 주 1회 수집한 것입니다. 수집 과정의 오류가 있을 수 있으니,
-        실제 응모 전 <b className="font-semibold text-muted">원본 공고</b>에서 최종 확인하세요.
+      <footer className="mt-4 bg-ink text-white/70">
+        <div className="mx-auto w-full max-w-content px-4 py-8 text-[12px] leading-relaxed">
+          데이터는 위비티·엽서시 공개 정보를 주 1회 수집한 것입니다. 수집 과정의 오류가 있을 수 있으니,
+          실제 응모 전 <b className="font-bold text-white">원본 공고</b>에서 최종 확인하세요.
+        </div>
       </footer>
     </>
   );

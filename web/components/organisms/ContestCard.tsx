@@ -1,46 +1,46 @@
 import type { Contest } from "../../lib/types";
-import { DdayBadge } from "../atoms/DdayBadge";
-import { PrizeBadge } from "../atoms/PrizeBadge";
-import { Tag } from "../atoms/Tag";
+import { ddayInfo } from "../../lib/dday";
 import { MetaRow } from "../molecules/MetaRow";
 
+/** WIRED story-row — 박스/그림자/뱃지 없이 가는 괘선으로 나뉜 기사 행. */
 export function ContestCard({ contest }: { contest: Contest }) {
+  const { state, label } = ddayInfo(contest.deadline);
+  const ddayClass =
+    state === "soon"
+      ? "text-ink font-bold"
+      : state === "near"
+        ? "text-ink-soft font-semibold"
+        : "text-muted font-medium";
+
   return (
     <a
       href={contest.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block rounded-card border border-rule bg-surface px-4 py-3.5 shadow-card transition-colors hover:border-rule-strong"
+      className="group block border-b border-rule py-5"
     >
-      <div className="flex items-start justify-between gap-2.5">
-        <h3 className="text-[18px] font-bold leading-snug tracking-tight text-ink">
+      {/* eyebrow — 장르 */}
+      {contest.genres.length > 0 && (
+        <div className="text-[12px] font-bold tracking-[0.06em] text-muted">
+          {contest.genres.join(" · ")}
+        </div>
+      )}
+
+      {/* 제목 + D-day */}
+      <div className="mt-1 flex items-baseline justify-between gap-4">
+        <h3 className="text-[21px] font-bold leading-snug tracking-tight text-ink group-hover:text-link">
           {contest.title}
         </h3>
-        <DdayBadge deadline={contest.deadline} />
+        <span className={`shrink-0 text-[14px] tracking-tight ${ddayClass}`}>{label}</span>
       </div>
 
       {contest.summary && (
-        <p className="mt-1.5 line-clamp-2 text-[14px] leading-relaxed text-muted">
+        <p className="mt-1.5 line-clamp-2 text-[15px] leading-relaxed text-muted">
           {contest.summary}
         </p>
       )}
 
-      {contest.prize && (
-        <div className="mt-2.5">
-          <PrizeBadge prize={contest.prize} />
-        </div>
-      )}
-
       <MetaRow contest={contest} />
-
-      <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
-        {contest.genres.map((g) => (
-          <Tag key={g}>{g}</Tag>
-        ))}
-        <span className="ml-auto text-[11px] text-caption">
-          {contest.sources.join("·")}
-        </span>
-      </div>
     </a>
   );
 }

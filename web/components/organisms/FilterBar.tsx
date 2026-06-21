@@ -1,5 +1,6 @@
 "use client";
 
+/** WIRED 스타일 — 칩/pill 없이 텍스트 링크 필터 + 각진 입력. */
 export function FilterBar({
   genres,
   active,
@@ -21,19 +22,19 @@ export function FilterBar({
           value={keyword}
           onChange={(e) => onKeyword(e.target.value)}
           placeholder="제목·주최사 검색"
-          className="w-full rounded-card border border-rule bg-surface px-3 py-2.5 text-[14px] text-ink outline-none placeholder:text-caption focus:border-rule-strong"
+          className="w-full border border-ink bg-surface px-3 py-2.5 text-[15px] text-ink outline-none placeholder:text-caption focus:border-ink"
         />
-        <div className="mt-2.5 flex gap-1.5 overflow-x-auto pb-0.5 [scrollbar-width:none]">
+        <div className="mt-3 flex gap-4 overflow-x-auto pb-0.5 [scrollbar-width:none]">
           {genres.map((g) => {
             const on = g === active;
             return (
               <button
                 key={g}
                 onClick={() => onGenre(g)}
-                className={`shrink-0 rounded-full border px-3 py-1.5 text-[13px] font-semibold whitespace-nowrap transition-colors ${
+                className={`shrink-0 border-b-2 pb-1 text-[14px] whitespace-nowrap transition-colors ${
                   on
-                    ? "border-ink bg-ink text-surface"
-                    : "border-rule bg-surface text-muted hover:border-rule-strong"
+                    ? "border-ink font-bold text-ink"
+                    : "border-transparent font-medium text-muted hover:text-ink"
                 }`}
               >
                 {g}
