@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문학 공모전 모아보기</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --line:#e7e9ee; --ink:#1f2430; --sub:#6b7280;
+    --accent:#3b5bdb; --red:#e03131; --orange:#f08c00; --green:#2f9e44;
+    --chip:#eef1f8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",sans-serif;
+       background:var(--bg);color:var(--ink);line-height:1.5}
+  header{background:var(--card);border-bottom:1px solid var(--line);padding:20px 16px 0}
+  .wrap{max-width:880px;margin:0 auto}
+  h1{margin:0 0 4px;font-size:22px;letter-spacing:-.02em}
+  .meta{color:var(--sub);font-size:13px;margin-bottom:14px}
+  .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-bottom:12px}
+  #search{flex:1;min-width:180px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+          font-size:14px;background:#fff}
+  .tabs{display:flex;gap:6px;overflow-x:auto;padding:0 0 12px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;padding:7px 13px;border:1px solid var(--line);background:#fff;border-radius:999px;
+       font-size:13px;color:var(--sub);cursor:pointer;white-space:nowrap;transition:.15s}
+  .tab.on{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+  main{max-width:880px;margin:0 auto;padding:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;
+        margin-bottom:10px;display:block;text-decoration:none;color:inherit;transition:.15s}
+  .card:hover{border-color:#c7cddb;box-shadow:0 2px 10px rgba(20,30,60,.05)}
+  .card-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .title{font-size:16px;font-weight:700;letter-spacing:-.01em;margin:0}
+  .dday{flex:0 0 auto;font-size:13px;font-weight:800;padding:4px 9px;border-radius:8px;white-space:nowrap}
+  .dday.soon{background:#ffe3e3;color:var(--red)}
+  .dday.near{background:#fff3bf;color:var(--orange)}
+  .dday.far{background:#e6f4ea;color:var(--green)}
+  .dday.none{background:var(--chip);color:var(--sub)}
+  .row{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:9px;font-size:13px;color:var(--sub)}
+  .row b{color:var(--ink);font-weight:600}
+  .genres{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+  .g{font-size:11px;padding:3px 8px;border-radius:6px;background:var(--chip);color:#43506b;font-weight:600}
+  .src{font-size:11px;color:#9aa1ad;margin-left:auto;align-self:center}
+  .empty{text-align:center;color:var(--sub);padding:60px 20px}
+  footer{max-width:880px;margin:0 auto;padding:8px 16px 40px;color:#9aa1ad;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>📚 문학 공모전 모아보기</h1>
+    <div class="meta" id="meta">불러오는 중…</div>
+    <div class="controls">
+      <input id="search" type="search" placeholder="제목·주최사 검색">
+    </div>
+    <div class="tabs" id="tabs"></div>
+  </div>
+</header>
+<main id="list"></main>
+<footer>
+  데이터는 위비티·엽서시 공개 정보를 주 1회 수집한 것입니다. 수집 과정의 오류가 있을 수 있으니,
+  실제 응모 전 <b>원본 공고</b>에서 최종 확인하세요.
+</footer>
+
+<script>
+const GENRES = ["전체","시","소설","수필","동화/아동","희곡/극본","백일장","기타"];
+const ELIG_MAP = {초:"초등",중:"중등",고:"고등",청:"청소년",대:"대학생",일:"일반",신인:"신인",작가:"작가"};
+let DATA = [], activeGenre = "전체", keyword = "";
+
+function daysLeft(iso){
+  if(!iso) return null;
+  const today = new Date(); today.setHours(0,0,0,0);
+  const d = new Date(iso+"T00:00:00");
+  return Math.round((d - today)/86400000);
+}
+function ddayBadge(iso){
+  const n = daysLeft(iso);
+  if(n===null) return {cls:"none", txt:"마감미정"};
+  if(n<0) return {cls:"none", txt:"마감"};
+  if(n===0) return {cls:"soon", txt:"오늘마감"};
+  if(n<=3) return {cls:"soon", txt:"D-"+n};
+  if(n<=7) return {cls:"near", txt:"D-"+n};
+  return {cls:"far", txt:"D-"+n};
+}
+function prettyElig(s){
+  if(!s) return "";
+  if(s.includes("제한없음")) return "누구나";
+  const parts = s.split(/[,\s]+/).filter(Boolean).map(x=>ELIG_MAP[x]||x);
+  return [...new Set(parts)].join("·");
+}
+function esc(s){return (s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));}
+
+function render(){
+  const list = document.getElementById("list");
+  let items = DATA.filter(c=>{
+    if(activeGenre!=="전체" && !(c.genres||[]).includes(activeGenre)) return false;
+    if(keyword){
+      const hay = (c.title+" "+(c.organizer||"")).toLowerCase();
+      if(!hay.includes(keyword)) return false;
+    }
+    return true;
+  });
+  if(!items.length){ list.innerHTML = '<div class="empty">조건에 맞는 공모전이 없어요.</div>'; return; }
+  list.innerHTML = items.map(c=>{
+    const b = ddayBadge(c.deadline);
+    const elig = prettyElig(c.eligibility);
+    const meta = [];
+    if(c.deadline) meta.push(`<span>마감 <b>${c.deadline}</b></span>`);
+    if(c.organizer) meta.push(`<span>${esc(c.organizer)}</span>`);
+    if(c.prize) meta.push(`<span>🏆 <b>${esc(c.prize)}</b></span>`);
+    if(elig) meta.push(`<span>👤 ${esc(elig)}</span>`);
+    const genres = (c.genres||[]).map(g=>`<span class="g">${g}</span>`).join("");
+    return `<a class="card" href="${esc(c.url)}" target="_blank" rel="noopener">
+      <div class="card-top">
+        <h3 class="title">${esc(c.title)}</h3>
+        <span class="dday ${b.cls}">${b.txt}</span>
+      </div>
+      <div class="row">${meta.join("")}</div>
+      <div class="genres">${genres}<span class="src">${(c.sources||[]).join("·")}</span></div>
+    </a>`;
+  }).join("");
+}
+
+function buildTabs(){
+  const wrap = document.getElementById("tabs");
+  const present = new Set(DATA.flatMap(c=>c.genres||[]));
+  wrap.innerHTML = GENRES.filter(g=>g==="전체"||present.has(g)).map(g=>
+    `<div class="tab ${g===activeGenre?"on":""}" data-g="${g}">${g}</div>`).join("");
+  wrap.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
+    activeGenre = t.dataset.g;
+    wrap.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x===t));
+    render();
+  });
+}
+
+document.getElementById("search").addEventListener("input", e=>{
+  keyword = e.target.value.trim().toLowerCase(); render();
+});
+
+fetch("contests.json?_="+Date.now())
+  .then(r=>r.json())
+  .then(d=>{
+    DATA = d.contests||[];
+    const when = d.generated_at ? new Date(d.generated_at).toLocaleString("ko-KR",{dateStyle:"medium",timeStyle:"short"}) : "-";
+    document.getElementById("meta").innerHTML = `현재 <b>${DATA.length}</b>건 · 최근 수집 ${when}`;
+    buildTabs(); render();
+  })
+  .catch(()=>{ document.getElementById("meta").textContent = "데이터를 불러오지 못했어요 (contests.json 확인)"; });
+</script>
+</body>
+</html>
