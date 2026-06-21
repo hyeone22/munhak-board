@@ -1,0 +1,675 @@
+{
+  "generated_at": "2026-06-21T07:26:15+00:00",
+  "count": 43,
+  "contests": [
+    {
+      "title": "월간 시사문단(통권 279호 7월호) 신인작품상 원고 모집",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5601",
+      "organizer": "월간 시사문단. 도서출판 그림과책",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-06-22",
+      "dday": "내일마감",
+      "status": "종합",
+      "summary": "월간 시사문단 신인작품상, 100만원 상당 영상 홍보로 신인 작가 매월 22일 모집.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026 광명시 도서 제작 지원 작품 공모",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107629",
+      "organizer": "광명시",
+      "genres": [
+        "시",
+        "희곡/극본"
+      ],
+      "deadline": "2026-06-30",
+      "dday": "D-9",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "한겨레 작가아카데미 시, 소설, 희곡, 드라마, 아동문학 창작강의",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5578",
+      "organizer": "한겨레 작가아카데미",
+      "genres": [
+        "소설",
+        "동화/아동",
+        "희곡/극본"
+      ],
+      "deadline": "2026-06-30",
+      "dday": "D-9",
+      "status": "모집",
+      "summary": "대한민국 1호 작가교육기관 한겨레 작가아카데미! 시, 소설 등 폭넓은 창작 강의로 수십 명 등작작가 배출",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026 대한민국 편지쓰기 공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5500",
+      "organizer": "우정사업본부",
+      "genres": [
+        "수필"
+      ],
+      "deadline": "2026-06-30",
+      "dday": "D-9",
+      "status": "글짓기",
+      "summary": "최대 80만원 상금의 'K-Cheer Up' 손편지 공모전 5/1~6/30 접수",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026년 고산(孤山) 문학대상 신인상 공모 (시,시조 각 300만원)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5488",
+      "organizer": "고산문학축전운영위원회",
+      "genres": [
+        "시"
+      ],
+      "deadline": "2026-06-30",
+      "dday": "D-9",
+      "status": "시",
+      "summary": "고산 문학대상 신인상, 시/시조 각 300만원 상금으로 2026년 6월 30일 마감.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제25회 계간 문예창작 신인상 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5571",
+      "organizer": "문예창작",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-06-30",
+      "dday": "D-9",
+      "status": "종합",
+      "summary": "계간 『문예창작』 신인상 공모는 기성 문인 대우 및 문단 활동 지원이 특징",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026년 제43회 농민신문사 영농·생활 수기 작품 공모 (총 800만원 상금)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5543",
+      "organizer": "농민신문사",
+      "genres": [
+        "수필"
+      ],
+      "deadline": "2026-07-01",
+      "dday": "D-10",
+      "status": "수기",
+      "summary": "농민신문사 수기 공모전, 농촌 거주자 대상 총 800만원 상금.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "문학고을 계간지 하반기 등단 신인 문학상 공모  제87회 1차 공모(엘리트 문학의 산실 / 등단의 길잡이)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5639",
+      "organizer": "문학고을/문학고을출판사",
+      "genres": [
+        "시",
+        "소설",
+        "수필",
+        "동화/아동"
+      ],
+      "deadline": "2026-07-02",
+      "dday": "D-11",
+      "status": "종합",
+      "summary": "시, 시조, 아동문학, 디카시, 수필, 단편소설 등 다양한 분야의 신인 작가를 발굴",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제11회 계간 시창작 신인상 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5591",
+      "organizer": "시창작",
+      "genres": [
+        "시"
+      ],
+      "deadline": "2026-07-03",
+      "dday": "D-12",
+      "status": "시",
+      "summary": "계간 『시창작』 신인상 공모는 당선 시 기성 문인 대우와 문단 활동을 지원합니다.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제6회 희망플러스 출생장려 수기 공모전",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107591",
+      "organizer": "(사)한국출산장려진흥회중앙회",
+      "genres": [
+        "수필",
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-05",
+      "dday": "D-14",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "제15회 둔촌백일장",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107817",
+      "organizer": "서울특별시 강동문화원",
+      "genres": [
+        "백일장",
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-06",
+      "dday": "D-15",
+      "status": "접수중",
+      "summary": "최대 100만원 상금, 무료 참가, 작품집 발간 기회까지! 둔촌백일장에 도전하세요.",
+      "sources": [
+        "엽서시",
+        "위비티"
+      ]
+    },
+    {
+      "title": "제18회 매운당 이조년 문학 공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5589",
+      "organizer": "고령군, 고령문화원",
+      "genres": [
+        "수필"
+      ],
+      "deadline": "2026-07-10",
+      "dday": "D-19",
+      "status": "종합",
+      "summary": "대상 300만원, 6/9~7/10 운문·산문 공모",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "소설창작커뮤니티 소행성B612 2026년 3학기 수강생 모집",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5576",
+      "organizer": "소행성B612",
+      "genres": [
+        "소설"
+      ],
+      "deadline": "2026-07-10",
+      "dday": "D-19",
+      "status": "소설",
+      "summary": "이상문학상 박상우 작가의 소설창작 강좌 소행성B612 2026년 3학기 수강생을 모집",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제24회 신동엽 시인 전국 고교 백일장",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5609",
+      "organizer": "사단법인 신동엽기념사업회 신동엽문학관",
+      "genres": [
+        "백일장"
+      ],
+      "deadline": "2026-07-11",
+      "dday": "D-20",
+      "status": "청소년",
+      "summary": "고등학생 대상 신동엽 백일장, 문화체육관광부 장관상 및 상금 수여.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제9회 둔촌이집 문학상 (총상금 1500만원)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5426",
+      "organizer": "한국작가협회",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-07-15",
+      "dday": "D-24",
+      "status": "작가대상",
+      "summary": "총상금 1,500만원 둔촌이집 문학상, 등단 10년 이상 문인 대상 2026년 7월 15일 마감",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제109회 열린동해문학 신인문학상 공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5629",
+      "organizer": "열린동해문학연합회",
+      "genres": [
+        "시"
+      ],
+      "deadline": "2026-07-15",
+      "dday": "D-24",
+      "status": "종합",
+      "summary": "열린동해문학 신인문학상, 다양한 부문 수시 모집, 등단패 및 인증서 수여.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026년 제4회 정남진신인문학상 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5602",
+      "organizer": "장흥군. 한국문학특구포럼 추진위원회",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-07-15",
+      "dday": "D-24",
+      "status": "시",
+      "summary": "제4회 정남진신인문학상, 상금 삼백만 원과 계간 『시산맥』 등단 및 작품 활동 지원 특전",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026 노벨라 앤솔로지 공모 (경계에 선 존재들)",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107758",
+      "organizer": "(주)노벨라스튜디오",
+      "genres": [
+        "소설",
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-24",
+      "dday": "D-33",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "제14회 정읍사문학상 작품공모 (총상금 450만원)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5603",
+      "organizer": "정읍문학회",
+      "genres": [
+        "수필"
+      ],
+      "deadline": "2026-07-30",
+      "dday": "D-39",
+      "status": "종합",
+      "summary": "정읍사문학상 시/수필 공모. 총상금 450만원(대상 300만원).",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026 전국 고교 웹소설 슈퍼루키전 공모전",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107823",
+      "organizer": "gling, 한국영상대학교, SBS아카데미게임학원",
+      "genres": [
+        "소설",
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "제8회 김유정 청소년문학상 공모",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107822",
+      "organizer": "김유정기념사업회",
+      "genres": [
+        "동화/아동",
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "제18회 효사랑 글짓기 공모전",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107819",
+      "organizer": "효세계화운동본부",
+      "genres": [
+        "백일장",
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "접수중",
+      "summary": "제18회 효사랑 글짓기공모전이 7월 31일까지 접수하며, 대상 100만원 및 장관상 수여",
+      "sources": [
+        "엽서시",
+        "위비티"
+      ]
+    },
+    {
+      "title": "제5회 서귀포칠십리문학상 공모",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107640",
+      "organizer": "서귀포문인협회",
+      "genres": [
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "청년 다큐 영화 시나리오 공모전",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107606",
+      "organizer": "Youth Vision Studio",
+      "genres": [
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "2026년 제15회 협성 독서왕 독후감 공모 (총상금 1억 1,150만원)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5464",
+      "organizer": "협성문화재단",
+      "genres": [
+        "수필"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "독후감",
+      "summary": "총상금 1억 1,150만원의 협성 독서왕 독후감 공모전이 7월 한 달간 온라인으로 진행됩니다.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제2회 전국 고교 웹소설 슈퍼루키전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5587",
+      "organizer": "한국영상대학교 웹소설전공 외",
+      "genres": [
+        "소설"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "청소년",
+      "summary": "전국 고교 웹소설 슈퍼루키전, 총 상금 350만원과 뷰컴즈 우선 출간, 전문가 멘토링 혜택",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제8회 김유정 청소년문학상",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5577",
+      "organizer": "(사)김유정기념사업회",
+      "genres": [
+        "동화/아동"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "청소년",
+      "summary": "대상 2명 각 50만원 등 총 220만원 장학금과 수상작품집 발간 특전이 있습니다.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제11회 국립생태원 생태문학 공모전 (총상금 1000만원)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5579",
+      "organizer": "국립생태원",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-08-14",
+      "dday": "D-54",
+      "status": "아동문학",
+      "summary": "총상금 1,000만 원. 국민 누구나 응모가능",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제 8회 대림성모병원 핑크스토리 창작시 공모전",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107773",
+      "organizer": "대림성모병원",
+      "genres": [
+        "시",
+        "희곡/극본"
+      ],
+      "deadline": "2026-08-16",
+      "dday": "D-56",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "숭실사이버대 영상예술창작학과 2026학년도 2학기 신.편입생 모집",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5575",
+      "organizer": "숭실사이버대",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-08-19",
+      "dday": "D-59",
+      "status": "입시요강",
+      "summary": "AI 창작 융합 풀패키지 영상예술창작학과에서 2026학년도 2학기 신·편입생을 모집합니다.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제3회 여수·순천 10·19 평화문학상 현상 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5590",
+      "organizer": "전라남도, 전라남도문화재단",
+      "genres": [
+        "소설",
+        "동화/아동"
+      ],
+      "deadline": "2026-08-20",
+      "dday": "D-60",
+      "status": "종합",
+      "summary": "총 상금 7천만원! 제3회 여수·순천 10·19 평화문학상, 시·소설·아동문학 공모.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026년 현진건 문학상 및 신인문학상",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5604",
+      "organizer": "(사)현진건기념사업회",
+      "genres": [
+        "소설"
+      ],
+      "deadline": "2026-08-20",
+      "dday": "D-60",
+      "status": "소설",
+      "summary": "현진건 문학상(상금 2천만원) 및 신인문학상(상금 7백만원) 단편소설 공모.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제3회 안동문화상 문학분야 공모 (총상금 2000만원)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5438",
+      "organizer": "한국정신문화재단",
+      "genres": [
+        "소설"
+      ],
+      "deadline": "2026-08-21",
+      "dday": "D-61",
+      "status": "종합",
+      "summary": "안동 소재 시/단편소설 공모, 각 1천만원 상금, 내외국인 누구나 참여 가능(청소년제외)",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제34회 눈높이아동문학대전",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107820",
+      "organizer": "대교문화재단, 세계청소년문화재단",
+      "genres": [
+        "동화/아동",
+        "희곡/극본"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "제16회 한무숙 소설 독후감 대회",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107718",
+      "organizer": "한무숙문학관",
+      "genres": [
+        "소설",
+        "수필",
+        "희곡/극본"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "2026년 전국 어린이 독후감대회",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107572",
+      "organizer": "한국어린이출판연합",
+      "genres": [
+        "동화/아동",
+        "수필",
+        "희곡/극본"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "접수중",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "제4회 제주청년문학상 작품 공모",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107550",
+      "organizer": "제주도문인협회",
+      "genres": [
+        "희곡/극본"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "접수예정",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "제26회 가람이병기청년시·최명희청년소설 문학상 공모",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gub=1&cidx=23&gbn=view&gp=3&ix=107537",
+      "organizer": "전북대학교신문방송사",
+      "genres": [
+        "소설",
+        "희곡/극본"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "접수예정",
+      "summary": "",
+      "sources": [
+        "위비티"
+      ]
+    },
+    {
+      "title": "제34회 눈높이아동문학대전 - 청소년문학 부문",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5580",
+      "organizer": "(재)대교문화재단",
+      "genres": [
+        "동화/아동"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "청소년",
+      "summary": "교육부장관상과 상금 100만원이 걸린 청소년문학 부문은 운문 한 편으로도 도전 가능하며. 중고등학생 및 해당 연령 학생 대상",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제3회 신격호 샤롯데문학상 (총상금 9,000만원)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5519",
+      "organizer": "롯데장학재단",
+      "genres": [
+        "소설",
+        "수필"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "종합",
+      "summary": "총상금 9천만원! 시/소설/수필 부문별 대상 1천만원씩, 2026년 8월 31일까지 접수",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제18회 삶의향기 동서문학상 공모 (총상금 7,900만원)",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5533",
+      "organizer": "동서식품",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-09-29",
+      "dday": "D-100",
+      "status": "종합",
+      "summary": "총상금 7,900만원, 대한민국 여성 대상. 등단 및 한국문인협회 입회 자격 부여.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026년 제15회 행주문학상 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5640",
+      "organizer": "(사)고양시문인협회, 고양행주문학상 운영위원회",
+      "genres": [
+        "소설"
+      ],
+      "deadline": "2026-09-30",
+      "dday": "D-101",
+      "status": "작가대상",
+      "summary": "전국 문인(시.소설로 등단) 대상 미발표작 공모, 각 부문 상금 500만원과 상패 수여.",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "청강문화산업대학교 웹소설 실기 피드백프로그램",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5627",
+      "organizer": "청강문화산업대학교 웹소설창작전공",
+      "genres": [
+        "시",
+        "소설"
+      ],
+      "deadline": "2026-11-30",
+      "dday": "D-162",
+      "status": "소설",
+      "summary": "청강대 웹소설창작전공 입시 준비생 대상, 교수진 피드백 및 우수작 경품 제공으로 실력 향상",
+      "sources": [
+        "엽서시"
+      ]
+    }
+  ]
+}
