@@ -1,4 +1,5 @@
 """문학 공모전 수집기 — 위비티·엽서시·콘테스트코리아 → web/public/contests.json."""
+import hashlib
 import json
 import sys
 from datetime import date, datetime, timezone
@@ -10,7 +11,43 @@ from genres import dedupe
 from sources import wevity, ilovecontest, contestkorea
 
 OUT = Path(__file__).resolve().parent.parent / "web" / "public" / "contests.json"
+ICS_OUT = OUT.with_name("contests.ics")
 PAGES = 3  # 출처별로 긁어올 페이지 수
+
+
+def _prev_first_seen():
+    """이전 수집 결과에서 url→first_seen 맵 (신규 공고 판별용)."""
+    try:
+        prev = json.loads(OUT.read_text(encoding="utf-8"))
+        return {c["url"]: c["first_seen"]
+                for c in prev.get("contests", []) if c.get("first_seen")}
+    except Exception:
+        return {}
+
+
+def _ics_escape(s):
+    return (s or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", " ")
+
+
+def write_ics(items):
+    """마감일을 종일 일정으로 하는 .ics 생성 (캘린더 구독/가져오기용)."""
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0",
+             "PRODID:-//munhak-board//KR", "CALSCALE:GREGORIAN"]
+    for it in items:
+        d = it.get("deadline")
+        if not d:
+            continue
+        uid = hashlib.md5(it["url"].encode()).hexdigest()[:16]
+        lines += [
+            "BEGIN:VEVENT",
+            f"UID:{uid}@munhak-board",
+            f"DTSTART;VALUE=DATE:{d.replace('-', '')}",
+            f"SUMMARY:[마감] {_ics_escape(it['title'])}",
+            f"URL:{it['url']}",
+            "END:VEVENT",
+        ]
+    lines.append("END:VCALENDAR")
+    ICS_OUT.write_text("\r\n".join(lines) + "\r\n", encoding="utf-8")
 
 SOURCES = [
     ("위비티", wevity),
@@ -40,6 +77,12 @@ def run():
     # 마감 가까운 순(날짜 없는 건 맨 뒤)
     merged.sort(key=lambda x: (x.get("deadline") is None, x.get("deadline") or "9999"))
 
+    # 신규 공고 표시용 first_seen (이전 수집에서 승계, 처음 보면 오늘)
+    prev = _prev_first_seen()
+    today_iso = today.isoformat()
+    for it in merged:
+        it["first_seen"] = prev.get(it["url"], today_iso)
+
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "count": len(merged),
@@ -47,7 +90,9 @@ def run():
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"총 {len(all_items)}건 수집 → 중복제거 후 {len(merged)}건 → {OUT}")
+    write_ics(merged)
+    new_cnt = sum(1 for it in merged if it["first_seen"] == today_iso)
+    print(f"총 {len(all_items)}건 수집 → 중복제거 후 {len(merged)}건 (신규 {new_cnt}) → {OUT}")
 
     # ── 견고성 점검: 구조 변경/차단으로 조용히 비는 것을 막는다 ──
     problems = []

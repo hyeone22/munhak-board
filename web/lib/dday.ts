@@ -9,6 +9,16 @@ export function daysLeft(deadline: string | null): number | null {
   return Math.round((d.getTime() - today.getTime()) / 86_400_000);
 }
 
+/** 최초 수집 후 N일 이내면 신규(NEW). */
+export function isNew(firstSeen?: string, withinDays = 7): boolean {
+  if (!firstSeen) return false;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const d = new Date(firstSeen + "T00:00:00");
+  const days = Math.round((today.getTime() - d.getTime()) / 86_400_000);
+  return days >= 0 && days <= withinDays;
+}
+
 /** 5일/14일 컷으로 상태·라벨 결정 (DESIGN.md). */
 export function ddayInfo(deadline: string | null): { state: DdayState; label: string } {
   const n = daysLeft(deadline);

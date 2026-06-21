@@ -24,11 +24,16 @@ jobs:
       - name: 공모전 수집
         run: python scraper/scrape.py
 
+      - name: 마감 임박 알림 (Discord, 시크릿 없으면 자동 생략)
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scraper/notify.py
+
       - name: 변경분 커밋 & 푸시
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/public/contests.json
+          git add web/public/contests.json web/public/contests.ics
           if git diff --staged --quiet; then
             echo "변경 없음 — 커밋 생략"
           else

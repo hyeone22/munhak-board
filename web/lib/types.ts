@@ -10,6 +10,7 @@ export interface Contest {
   prize: string;
   eligibility: string;
   sources: string[];
+  first_seen?: string; // 최초 수집일 (NEW 표시용)
 }
 
 export interface ContestPayload {

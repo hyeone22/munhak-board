@@ -85,8 +85,17 @@ export default function Page() {
 
       <footer className="mt-4 bg-ink text-white/70">
         <div className="mx-auto w-full max-w-content px-4 py-8 text-[12px] leading-relaxed">
-          데이터는 위비티·엽서시 공개 정보를 주 1회 수집한 것입니다. 수집 과정의 오류가 있을 수 있으니,
-          실제 응모 전 <b className="font-bold text-white">원본 공고</b>에서 최종 확인하세요.
+          <a
+            href="contests.ics"
+            className="font-bold text-white underline underline-offset-2"
+          >
+            🗓 마감일 캘린더(.ics) 내려받기
+          </a>
+          <p className="mt-2">
+            데이터는 위비티·엽서시·콘테스트코리아 공개 정보를 주 1회 수집한 것입니다. 수집 과정의
+            오류가 있을 수 있으니, 실제 응모 전{" "}
+            <b className="font-bold text-white">원본 공고</b>에서 최종 확인하세요.
+          </p>
         </div>
       </footer>
     </>

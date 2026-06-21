@@ -1,5 +1,5 @@
 import type { Contest } from "../../lib/types";
-import { ddayInfo } from "../../lib/dday";
+import { ddayInfo, isNew } from "../../lib/dday";
 import { MetaRow } from "../molecules/MetaRow";
 
 /** WIRED story-row — 박스/그림자/뱃지 없이 가는 괘선으로 나뉜 기사 행. */
@@ -19,10 +19,11 @@ export function ContestCard({ contest }: { contest: Contest }) {
       rel="noopener noreferrer"
       className="group block border-b border-rule py-5"
     >
-      {/* eyebrow — 장르 */}
-      {contest.genres.length > 0 && (
-        <div className="text-[12px] font-bold tracking-[0.06em] text-muted">
-          {contest.genres.join(" · ")}
+      {/* eyebrow — NEW + 장르 */}
+      {(contest.genres.length > 0 || isNew(contest.first_seen)) && (
+        <div className="flex items-center gap-2 text-[12px] font-bold tracking-[0.06em]">
+          {isNew(contest.first_seen) && <span className="text-link">NEW</span>}
+          <span className="text-muted">{contest.genres.join(" · ")}</span>
         </div>
       )}
 
