@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-21T08:33:26+00:00",
-  "count": 43,
+  "generated_at": "2026-06-21T12:59:05+00:00",
+  "count": 61,
   "contests": [
     {
       "title": "월간 시사문단(통권 279호 7월호) 신인작품상 원고 모집",
@@ -15,6 +15,57 @@
       "summary": "월간 시사문단 신인작품상, 100만원 상당 영상 홍보로 신인 작가 매월 22일 모집.",
       "prize": "상금 100만원",
       "eligibility": "일, 신인, 제한없음",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "[경기]제1회 경기청년문예 공모대회",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5487",
+      "organizer": "경기작가회의",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-06-25",
+      "dday": "마감임박",
+      "status": "종합",
+      "summary": "경기청년문예 공모전, 최우수 100만 원, 신인 예우 및 작품 발표 지원.",
+      "prize": "",
+      "eligibility": "대, 일",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "시애틀 통일 문학상 공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5146",
+      "organizer": "민주평화통일자문회의 시애틀협의회",
+      "genres": [
+        "수필"
+      ],
+      "deadline": "2026-06-25",
+      "dday": "마감임박",
+      "status": "종합",
+      "summary": "한반도 통일 염원을 담은 시/수필 공모전, 대상 $1,000.",
+      "prize": "",
+      "eligibility": "신인, 작가, 제한없음",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "수성대학교 주최 제5회 전국 고교생 웹소설 공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5642",
+      "organizer": "수성대학교",
+      "genres": [
+        "소설"
+      ],
+      "deadline": "2026-06-25",
+      "dday": "마감임박",
+      "status": "소설",
+      "summary": "전국 고교생 및 또래 작가 지망생을 대상. 대상 100만원 장학금",
+      "prize": "대상 100만원",
+      "eligibility": "고",
       "sources": [
         "엽서시"
       ]
@@ -103,6 +154,41 @@
       "summary": "계간 『문예창작』 신인상 공모는 기성 문인 대우 및 문단 활동 지원이 특징",
       "prize": "",
       "eligibility": "일",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제5회 시산맥 기후환경문학상 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5156",
+      "organizer": "시산맥 기후환경문학상 제전위원회",
+      "genres": [
+        "시"
+      ],
+      "deadline": "2026-06-30",
+      "dday": "D-9",
+      "status": "시",
+      "summary": "시산맥 기후환경문학상, 시(시조) 공모로 500만원 상금과 기후환경 실천 의지를 평가합니다",
+      "prize": "총상금 500만원",
+      "eligibility": "제한없음",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제2회 시산맥 기후환경 전국어린이백일장 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5154",
+      "organizer": "시산맥 기후환경문학상 제전위원회",
+      "genres": [
+        "동화/아동",
+        "백일장"
+      ],
+      "deadline": "2026-06-30",
+      "dday": "D-9",
+      "status": "어린이",
+      "summary": "초등학생 대상 기후환경 백일장, 총상금 500만원으로 환경 실천을 독려합니다.",
+      "prize": "총상금 500만원",
+      "eligibility": "초",
       "sources": [
         "엽서시"
       ]
@@ -250,6 +336,24 @@
       ]
     },
     {
+      "title": "바라바라 세계관 웹소설 창작 공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5646",
+      "organizer": "포스타입",
+      "genres": [
+        "소설",
+        "희곡/극본"
+      ],
+      "deadline": "2026-07-14",
+      "dday": "D-23",
+      "status": "소설",
+      "summary": "바라바라 세계관 웹소설 공모전, 1등 상금 50만 원과 보이스 드라마 제작 특전",
+      "prize": "상금 50만원",
+      "eligibility": "제한없음",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
       "title": "제9회 둔촌이집 문학상 (총상금 1500만원)",
       "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5426",
       "organizer": "한국작가협회",
@@ -296,6 +400,23 @@
       "summary": "제4회 정남진신인문학상, 상금 삼백만 원과 계간 『시산맥』 등단 및 작품 활동 지원 특전",
       "prize": "",
       "eligibility": "신인",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "우리글 2026년 상반기 신인문학상 및 원고 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5648",
+      "organizer": "우리글작가회",
+      "genres": [
+        "시"
+      ],
+      "deadline": "2026-07-15",
+      "dday": "D-24",
+      "status": "종합",
+      "summary": "신인문학상 수상 시 등단패와 상장, 도서 증정 및 연말 문학대상 자동 응모 기회",
+      "prize": "총상금 9,000만원",
+      "eligibility": "제한없음",
       "sources": [
         "엽서시"
       ]
@@ -476,6 +597,57 @@
       ]
     },
     {
+      "title": "2026 제1회 국군사랑 전국 초...",
+      "url": "https://www.contestkorea.com/sub/view.php?displayrow=12&int_gbn=1&Txt_sGn=1&Txt_key=all&Txt_word=&Txt_bcode=030110001&Txt_code1=&Txt_aarea=&Txt_area=&Txt_sortkey=a.int_sort&Txt_sortword=desc&Txt_ahost=&Txt_host=&Txt_award=&Txt_award2=&Txt_code3=&Txt_tipyn=&Txt_comment=&Txt_resultyn=&Txt_actcode=&page=1&str_no=202601220053",
+      "organizer": "사단법인 국군사랑",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-07-31",
+      "dday": "D-40",
+      "status": "접수중",
+      "summary": "",
+      "prize": "",
+      "eligibility": "",
+      "sources": [
+        "콘테스트코리아"
+      ]
+    },
+    {
+      "title": "한국문학예술 신인상 작품공모 안내",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5513",
+      "organizer": "한국문학예술",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-08-10",
+      "dday": "D-50",
+      "status": "종합",
+      "summary": "한국문학예술 신인상 공모는 등단 및 기성문인 대우 혜택으로 신인 작가를 모집합니다.",
+      "prize": "",
+      "eligibility": "고, 대, 일",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제36회 전국 청소년 숲사랑 작품공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5643",
+      "organizer": "산림청, (사)한국숲사랑청소년단 그린레인저",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-08-12",
+      "dday": "D-52",
+      "status": "종합",
+      "summary": "",
+      "prize": "총상금 1000만원",
+      "eligibility": "초, 중, 고, 청",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
       "title": "제11회 국립생태원 생태문학 공모전 (총상금 1000만원)",
       "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5579",
       "organizer": "국립생태원",
@@ -488,6 +660,23 @@
       "summary": "총상금 1,000만 원. 국민 누구나 응모가능",
       "prize": "총상금 1000만원",
       "eligibility": "유, 초, 중, 고, 청, 대, 일, 제한없음",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026 제23회 황순원문학제 백일장",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5647",
+      "organizer": "양평군, 경희대학교, 중앙일보",
+      "genres": [
+        "백일장"
+      ],
+      "deadline": "2026-08-15",
+      "dday": "D-55",
+      "status": "청소년",
+      "summary": "초·중·고생 대상, 대상 100만원(장관상)",
+      "prize": "대상 100만원",
+      "eligibility": "초, 중, 고, 청",
       "sources": [
         "엽서시"
       ]
@@ -508,6 +697,23 @@
       "eligibility": "",
       "sources": [
         "위비티"
+      ]
+    },
+    {
+      "title": "2026 원북 원포항 올해의 책 독후감 공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5651",
+      "organizer": "포항시립포은중앙도서관",
+      "genres": [
+        "수필"
+      ],
+      "deadline": "2026-08-17",
+      "dday": "D-57",
+      "status": "독후감",
+      "summary": "2026 원북 원포항 독후감 공모전은 올해의 책을 읽고 독후감(감상문/감상화)을 제출",
+      "prize": "",
+      "eligibility": "초, 중, 고, 청, 대, 일, 제한없음",
+      "sources": [
+        "엽서시"
       ]
     },
     {
@@ -575,6 +781,23 @@
       "summary": "안동 소재 시/단편소설 공모, 각 1천만원 상금, 내외국인 누구나 참여 가능(청소년제외)",
       "prize": "총상금 2000만원",
       "eligibility": "대, 일, 신인, 작가, 제한없음",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "2026년 제12회 스토리텔링 공모전 - 일상 속의 장애인",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5649",
+      "organizer": "밀알복지재단",
+      "genres": [
+        "희곡/극본"
+      ],
+      "deadline": "2026-08-21",
+      "dday": "D-61",
+      "status": "수필",
+      "summary": "'일상 속의 장애인' 스토리텔링 공모전, 대상 200만 원 및 보건복지부 장관상",
+      "prize": "대상 200만원",
+      "eligibility": "제한없음",
       "sources": [
         "엽서시"
       ]
@@ -706,6 +929,74 @@
       ]
     },
     {
+      "title": "대한어머니회 제52회 전국여성독후감대회",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5650",
+      "organizer": "(사)대한어머니회중앙회",
+      "genres": [
+        "수필"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "독후감",
+      "summary": "2026년 대한어머니회 전국여성독후감대회, 총 500만원 상당 상금, 장관상 수여.",
+      "prize": "",
+      "eligibility": "대, 일, 신인",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제4회 반연간 문학수첩 신인 작가상 공모",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5644",
+      "organizer": "(주)문학수첩",
+      "genres": [
+        "소설"
+      ],
+      "deadline": "2026-08-31",
+      "dday": "D-71",
+      "status": "종합",
+      "summary": "제4회 문학수첩 신인 작가상, 중편소설 500만원 등 4개 부문 공모.",
+      "prize": "총상금 1500만원",
+      "eligibility": "신인, 작가",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제4회 선경작가상 공모",
+      "url": "https://www.contestkorea.com/sub/view.php?displayrow=12&int_gbn=1&Txt_sGn=1&Txt_key=all&Txt_word=&Txt_bcode=030110001&Txt_code1=&Txt_aarea=&Txt_area=&Txt_sortkey=a.int_sort&Txt_sortword=desc&Txt_ahost=&Txt_host=&Txt_award=&Txt_award2=&Txt_code3=&Txt_tipyn=&Txt_comment=&Txt_resultyn=&Txt_actcode=&page=1&str_no=202604080081",
+      "organizer": "선경산업",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-09-20",
+      "dday": "D-91",
+      "status": "접수중",
+      "summary": "",
+      "prize": "",
+      "eligibility": "",
+      "sources": [
+        "콘테스트코리아"
+      ]
+    },
+    {
+      "title": "제7회 선경문학상 공모",
+      "url": "https://www.contestkorea.com/sub/view.php?displayrow=12&int_gbn=1&Txt_sGn=1&Txt_key=all&Txt_word=&Txt_bcode=030110001&Txt_code1=&Txt_aarea=&Txt_area=&Txt_sortkey=a.int_sort&Txt_sortword=desc&Txt_ahost=&Txt_host=&Txt_award=&Txt_award2=&Txt_code3=&Txt_tipyn=&Txt_comment=&Txt_resultyn=&Txt_actcode=&page=1&str_no=202604080082",
+      "organizer": "선경산업",
+      "genres": [
+        "기타"
+      ],
+      "deadline": "2026-09-20",
+      "dday": "D-91",
+      "status": "접수중",
+      "summary": "",
+      "prize": "",
+      "eligibility": "",
+      "sources": [
+        "콘테스트코리아"
+      ]
+    },
+    {
       "title": "제18회 삶의향기 동서문학상 공모 (총상금 7,900만원)",
       "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5533",
       "organizer": "동서식품",
@@ -753,6 +1044,23 @@
       "summary": "청강대 웹소설창작전공 입시 준비생 대상, 교수진 피드백 및 우수작 경품 제공으로 실력 향상",
       "prize": "",
       "eligibility": "고, 청",
+      "sources": [
+        "엽서시"
+      ]
+    },
+    {
+      "title": "제4회 청백리 최만리 우리말 한글 시 · 시조 · 동시 전국 공모전",
+      "url": "https://ilovecontest.com/bbs/board.php?bo_table=contest&wr_id=5430",
+      "organizer": "해주최씨 부제학공 종회, 사단법인 해동공자 최충기념사업회",
+      "genres": [
+        "시"
+      ],
+      "deadline": "2026-12-31",
+      "dday": "D-193",
+      "status": "종합",
+      "summary": "일반부 최우수상 100만원, 학생부 30만원이 걸린 시·시조·동시 공모전",
+      "prize": "상금 30만원",
+      "eligibility": "초, 중, 고, 청, 대, 일, 신인, 작가, 제한없음",
       "sources": [
         "엽서시"
       ]

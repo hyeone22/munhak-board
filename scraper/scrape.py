@@ -7,16 +7,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from genres import dedupe
-from sources import wevity, ilovecontest
+from sources import wevity, ilovecontest, contestkorea
 
 OUT = Path(__file__).resolve().parent.parent / "web" / "public" / "contests.json"
-PAGES = 2  # 출처별로 긁어올 페이지 수
+PAGES = 3  # 출처별로 긁어올 페이지 수
 
 
 def run():
     today = date.today()
     all_items = []
-    for name, mod in [("위비티", wevity), ("엽서시", ilovecontest)]:
+    for name, mod in [("위비티", wevity), ("엽서시", ilovecontest),
+                      ("콘테스트코리아", contestkorea)]:
         try:
             got = mod.fetch(today, pages=PAGES)
             print(f"  {name}: {len(got)}건")
