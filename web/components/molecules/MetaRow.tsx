@@ -11,11 +11,6 @@ export function MetaRow({ contest }: { contest: Contest }) {
         </span>
       )}
       {contest.organizer && <span>{contest.organizer}</span>}
-      {contest.prize && (
-        <span>
-          🏆 <b className="font-semibold text-ink">{contest.prize}</b>
-        </span>
-      )}
       {elig && <span>👤 {elig}</span>}
     </div>
   );

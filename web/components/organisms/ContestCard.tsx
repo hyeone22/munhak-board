@@ -1,5 +1,6 @@
 import type { Contest } from "../../lib/types";
 import { DdayBadge } from "../atoms/DdayBadge";
+import { PrizeBadge } from "../atoms/PrizeBadge";
 import { Tag } from "../atoms/Tag";
 import { MetaRow } from "../molecules/MetaRow";
 
@@ -22,6 +23,12 @@ export function ContestCard({ contest }: { contest: Contest }) {
         <p className="mt-1.5 line-clamp-2 text-[14px] leading-relaxed text-muted">
           {contest.summary}
         </p>
+      )}
+
+      {contest.prize && (
+        <div className="mt-2.5">
+          <PrizeBadge prize={contest.prize} />
+        </div>
       )}
 
       <MetaRow contest={contest} />

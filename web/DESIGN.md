@@ -128,7 +128,7 @@ border-strong:   2px solid color-rule-strong
 shadow-card:     0 1px 2px rgba(20,18,14,.05)   /* 아주 연한 한 겹 */
 
 space: 4 / 8 / 12 / 16 / 24 / 32 / 48 (px 스케일)
-maxWidth-content: 1120px
+maxWidth-content: 1280px
 ```
 
 - 깊이는 **괘선이 우선**, 카드에만 `shadow-card` 한 겹.
@@ -142,6 +142,7 @@ maxWidth-content: 1120px
 
 ### Atoms
 - **DdayBadge** — D-day 상태별 색(soon/near/far/none). 라벨 타입. *마감일로 클라이언트 재계산.*
+- **PrizeBadge** — 상금 강조 칩(금색 `prize-fg/bg`). 🏆 + 굵게. 제목 아래 독립 배치, 상금 없으면 숨김.
 - **Tag** — 장르/출처 칩. `radius-xs`, 괘선 테두리.
 - **MetaItem** — 아이콘 + 라벨(마감/주최/상금/자격) 한 조각.
 - **SearchField** — 검색 입력(괘선 하단 강조, 각짐).

@@ -30,6 +30,9 @@
 
   --green-700: #2c5f46;
   --green-100: #e0ebe2;
+
+  --gold-700: #7a5712;
+  --gold-100: #f6ecd2;
 }
 
 @theme {
@@ -62,6 +65,10 @@
   --color-tag-fg: var(--ink-700);
   --color-tag-bg: var(--paper-100);
 
+  /* 상금 (강조) */
+  --color-prize-fg: var(--gold-700);
+  --color-prize-bg: var(--gold-100);
+
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
                system-ui, "Apple SD Gothic Neo", sans-serif;
 
@@ -70,7 +77,7 @@
 
   --shadow-card: 0 1px 2px rgba(20, 18, 14, 0.05);
 
-  --container-content: 1120px;
+  --container-content: 1280px;
 }
 
 /* ---------- Base ---------- */
