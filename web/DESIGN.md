@@ -21,8 +21,8 @@
 
 1. **종이 위의 활자** — 배경은 순백이 아니라 살짝 크림빛 종이. 콘텐츠가 인쇄물처럼 얹힌다.
 2. **활자 위계로 승부** — serif 없이 Pretendard만으로. 제목은 크고 굵게(700), 메타는 작고 차분하게. 크기·굵기·자간 대비로 신문 헤드라인 같은 위계를 만든다.
-3. **날카로운 각** — 둥근 모서리 거의 없음(0~2px). 카드 = 종이 위 칸막이(괘선).
-4. **괘선(rule)으로 구획** — 그림자 대신 얇은 선으로 영역을 나눈다. broadsheet 신문처럼.
+3. **거의 각짐** — 모서리 4px로만 살짝. 신문 칼럼에 가깝되 한 톤만 부드럽게.
+4. **괘선 우선, 그림자는 한 겹만** — 구획은 얇은 괘선으로, 카드에만 아주 연한 그림자 한 겹 허용.
 5. **잉크블루 링크 + 버밀리언 강조** — 상호작용은 잉크블루, 긴급(마감임박)은 편집 레드.
 6. **색은 절제** — 종이/잉크 무채색이 기본, 색은 D-day 상태와 링크에만.
 
@@ -82,12 +82,12 @@ color-link:           blue-600
 color-link-hover:     blue-700
 color-accent:         red-600        /* 브랜드 강조/마감임박 */
 
-/* D-day 상태 */
-color-dday-soon-fg:   red-600        /* ≤3일 */
+/* D-day 상태 — 5일/14일 컷 */
+color-dday-soon-fg:   red-600        /* ≤5일 */
 color-dday-soon-bg:   red-100
-color-dday-near-fg:   amber-600      /* 4~7일 */
+color-dday-near-fg:   amber-600      /* 6~14일 */
 color-dday-near-bg:   amber-100
-color-dday-far-fg:    green-700      /* 8일+ */
+color-dday-far-fg:    green-700      /* 15일+ */
 color-dday-far-bg:    green-100
 color-dday-none-fg:   ink-400        /* 마감미정 */
 color-dday-none-bg:   paper-100
@@ -119,19 +119,20 @@ color-tag-rule:       paper-200
 ## 5. 형태(Shape) · 간격 · 괘선
 
 ```
-radius-none:  0px        /* 카드·컨테이너 기본 */
+radius-card:  4px        /* 카드·입력 — 살짝만 둥글게 */
 radius-xs:    2px        /* 태그·뱃지 */
-radius-pill:  999px      /* 필터 탭(유일하게 둥근 요소) */
+radius-pill:  999px      /* 필터 탭(유일하게 완전 둥근 요소) */
 
 border-hairline: 1px solid color-rule
 border-strong:   2px solid color-rule-strong
+shadow-card:     0 1px 2px rgba(20,18,14,.05)   /* 아주 연한 한 겹 */
 
 space: 4 / 8 / 12 / 16 / 24 / 32 / 48 (px 스케일)
 maxWidth-content: 920px
 ```
 
-- **그림자 금지**(에디토리얼). 깊이는 괘선으로만 표현.
-- 카드 사이는 마진 대신 **공유 괘선**(리스트가 신문 칼럼처럼 보이게) 또는 8px 간격 + 괘선.
+- 깊이는 **괘선이 우선**, 카드에만 `shadow-card` 한 겹.
+- 카드는 4px 각, 괘선 테두리 + 옅은 그림자. 사이 간격 8px.
 
 ---
 
